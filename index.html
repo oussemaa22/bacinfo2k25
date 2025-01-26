@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clothing Brand</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: url('b.jpg') no-repeat center center/cover; 
+           
+            background-size: cover;
+            background-attachment: fixed;
+            filter: brightness(70%);
+            overflow-x: hidden; 
+       
+        }
+
+        header {
+            background-color: rgba(17, 17, 17, 0.8);
+            color: #fff;
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center; 
+           
+        }
+ 
+        
+        .name-list {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            width: 400px;
+            background-color: transparent;
+        }
+
+        .name-list li {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 15px;
+            font-weight: bold;
+            font-size: 18px;
+            color:  grey ; /* White text */
+            border-bottom: 1px solid #34495e; /* Dark line to separate names */
+            transition: background-color 0.3s;
+        }
+
+        .name-list li:last-child {
+            border-bottom: none;
+        }
+
+        .name-list li:hover {
+            background-color: #34495e; /* Slightly darker background on hover */
+        }
+
+        .name-list li .position {
+            font-size: 14px;
+            color: #bdc3c7; /* Lighter gray for positions */
+        }
+
+        .name-list li .contact {
+            font-size: 14px;
+            color: #3498db; /* Light blue color for email links */
+            text-decoration: none;
+        }
+
+        .name-list li .contact:hover {
+            text-decoration: underline;
+        }
+        
+        header h1 {
+            margin: 0;
+            font-size: 1.5rem;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            gap: 1rem;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1rem;
+        }
+
+        .hero {
+            position: relative;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .hero .card {
+            position: relative;
+            width: 300px;
+            height: 200px;
+            background: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            overflow: hidden;
+            transform: translateX(100%);
+            animation: slideIn 1s ease-in-out forwards;
+        }
+
+        .hero .card img {
+            width: 100%;
+            height: auto;
+        }
+
+        @keyframes slideIn {
+            from {
+                transform: translateX(100%);
+                opacity: 0;
+            }
+            to {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+
+        .content {
+            padding: 2rem;
+            text-align: center;
+        }
+
+        .content h3 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        .content p {
+            font-size: 1.2rem;
+            color: #555;
+        }
+
+        footer {
+            background-color: rgba(17, 17, 17, 0.8);
+            color: #fff;
+            text-align: center;
+            padding: 1rem;
+            position: relative;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Bac INFO 2k25</h1>
+        <nav>
+            <ul>
+                 
+                <li><a href="#contact">غَزَّة</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="card">
+            <img src="p.jpg" alt="Fashion Image">
+        </div>
+    </section>
+
+    <ul class="name-list">
+        <li>
+            <span class="name">Yassine Ghribi</span>
+        
+        </li>
+        <li>
+            <span class="name">Oussema Abdellaoui</span>
+    
+        </li>
+        <li>
+            <span class="name">Arwa Ifaoui</span>
+ 
+        </li>
+        <li>
+            <span class="name">Ameni sahlaoui</span>
+     
+        </li>
+        <li>
+            <span class="name">Oumayma Hamdaoui</span>
+ 
+        </li>
+        <li>
+            <span class="name">Ameni safsafi</span>
+       
+        </li>
+        <li>
+            <span class="name">Elhem Shili</span>
+         
+        </li>
+        <li>
+            <span class="name">Imen Ifaoui</span>
+        
+        </li>
+        <li>
+            <span class="name">Imen Gouti</span>
+        
+        </li>
+        <li>
+            <span class="name">Amal ifaoui</span>
+        
+        </li>
+        <li>
+            <span class="name">Borhen sidaoui</span>
+        
+        </li>
+        <li>
+            <span class="name">takwa ifaoui</span>
+        
+        </li>
+        <li>
+            <span class="name">Dhouha Romdhani</span>
+        
+        </li>
+        <li>
+            <span class="name">Talel Hamzaoui</span>
+        
+        </li>
+        <li>
+            <span class="name">Fedi ifaoui</span>
+        
+        </li>
+        <li>
+            <span class="name">Aziz Theyri</span>
+        
+        </li>
+        <li>
+            <span class="name">Dali Belkhiriya</span>
+        
+        </li>
+        <li>
+            <span class="name">Maryem Selmi</span>
+        
+        </li>
+        <li>
+            <span class="name">Najeh Amari</span>
+        
+        </li>
+        <li>
+            <span class="name">Nermine Ifaoui</span>
+        
+        </li>
+        <li>
+            <span class="name">Hichem Theyri</span>
+        
+        </li>
+        <li>
+            <span class="name">Yossra Issaoui</span>
+        
+        </li>
+        
+        <!-- Repeat the pattern for the remaining names -->
+    </ul>
+    <section class="content" id="about">
+       
+        <p>There are no type of people in the world those who understands binary and those who don't.</p>
+    </section>
+
+    <footer>
+        <p>&copy; NCHALAH ADMIS NES LKOL.</p>
+    </footer>
+</body>
+</html>
